@@ -11,10 +11,10 @@
     <link href="/assets/fonts/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <!--Google web fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="/https://fonts.googleapis.com">
+    <link rel="preconnect" href="/https://fonts.gstatic.com" crossorigin>
+    <link href=/"https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!--Simplebar css-->
     <link rel="stylesheet" href="/assets/vendor/css/simplebar.min.css">
@@ -28,7 +28,8 @@
 </head>
 
 <body>
-<!--////////////////// PreLoader Start//////////////////////-->
+
+<!--////////////////// PreLoader Start//// --dali treba tuka da se se napise @yield i @yield ili ne?? //////////////////-->
 <div class="loader bg-gradient-primary text-white">
     <div
         class="content flex-column p-4 pb-0 d-flex justify-content-center align-items-center flex-column-fluid position-relative">
@@ -450,7 +451,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-flex flex-column me-2 h-100 justify-content-center dropdown" data-tippy-placement="bottom-start" data-tippy-content="Search in the App">
-                        <a href="javascript:void;" data-bs-target="#modal_search" data-bs-toggle="modal"
+                        <a href="javascript;" data-bs-target="#modal_search" data-bs-toggle="modal"
                            class="d-flex align-items-center justify-content-center nav-link size-40 p-0">
                   <span class="material-symbols-rounded">
                     search

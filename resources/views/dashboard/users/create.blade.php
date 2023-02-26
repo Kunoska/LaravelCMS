@@ -50,5 +50,4 @@
         </div>
     </div>
 
-    <div class="col-md-10"
 @endsection
