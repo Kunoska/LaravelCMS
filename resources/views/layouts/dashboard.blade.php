@@ -7,29 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assan-Admin</title>
 
-    <!--Bootstrap icons-->
-    <link href="/assets/fonts/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
-    <!--Google web fonts-->
-    <link rel="preconnect" href="/https://fonts.googleapis.com">
-    <link rel="preconnect" href="/https://fonts.gstatic.com" crossorigin>
-    <link href=/"https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-
     <!--Simplebar css-->
     <link rel="stylesheet" href="/assets/vendor/css/simplebar.min.css">
 
     <!--Choices css-->
     <link rel="stylesheet" href="/assets/vendor/css/choices.min.css">
 
+    <!--Bootstrap icons-->
+    <link href="/assets/fonts/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
+    <!--Google web fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--Main style-->
     <link rel="stylesheet" href="/assets/css/style.min.css">
 </head>
 
 <body>
-
-<!--////////////////// PreLoader Start//// --dali treba tuka da se se napise @yield i @yield ili ne?? //////////////////-->
+<!--////////////////// PreLoader Start//////////////////////-->
 <div class="loader bg-gradient-primary text-white">
     <div
         class="content flex-column p-4 pb-0 d-flex justify-content-center align-items-center flex-column-fluid position-relative">
@@ -47,7 +44,6 @@
 <div class="d-flex flex-column flex-root">
     <!--Page-->
     <div class="page d-flex flex-row flex-column-fluid">
-
         <!--///////////Page sidebar begin///////////////-->
         <aside class="page-sidebar">
             <div class="h-100 flex-column d-flex justify-content-start">
@@ -59,11 +55,11 @@
                             <!--Sidebar-icon-->
                             <span class="sidebar-icon size-40 d-flex align-items-center justify-content-center fs-4 lh-1 text-white rounded-3 bg-gradient-primary fw-bolder"> A </span>
                             <span class="sidebar-text">
-                    <!--Sidebar-text-->
-                    <span class="sidebar-text text-truncate fs-3 fw-bold">
-                      Assan
-                    </span>
-                  </span>
+                            <!--Sidebar-text-->
+                            <span class="sidebar-text text-truncate fs-3 fw-bold">
+                              Assan
+                            </span>
+                          </span>
                         </div>
                     </a>
                 </div>
@@ -78,33 +74,33 @@
                             </li>
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          sell
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  sell
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">E-commerce</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="index-analytics.html" class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          monitoring
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  monitoring
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">Analytics</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="index-project-management.html" class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          folder
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  folder
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">Management <span class="badge rounded-pill bg-success ms-3">New</span></span>
                                 </a>
@@ -113,27 +109,27 @@
                             <li class="nav-item">
                                 <a href="widgets.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          widgets
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  widgets
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Widgets <span class="badge rounded-pill bg-info ms-3">60+</span></span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a data-bs-toggle="collapse"
-                                   class="nav-link d-flex align-items-center text-truncate "
+                                   class="nav-link d-flex align-items-center text-truncate active"
                                    aria-expanded="false" href="#ui-pages">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          sticky_note_2
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  sticky_note_2
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">Pages</span>
                                 </a>
-                                <ul id="ui-pages" class="sidebar-dropdown list-unstyled collapse datatabless_collapse">
+                                <ul id="ui-pages" class="sidebar-dropdown list-unstyled collapse show">
                                     <li class="sidebar-item">
                                         <a href="#pages-account" data-bs-toggle="collapse" aria-expanded="false" class="sidebar-link @@account_active">
                                             Account
@@ -188,10 +184,10 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_search" href="page-search.html">Search</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_invoice" href="page-invoice.html">Invoice</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_tasks" href="page-tasks.html">Tasks</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_pricing" href="page-pricing.html">Pricing</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link pages_search" href="page-search.html">Search</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link pages_invoice" href="page-invoice.html">Invoice</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link pages_tasks" href="page-tasks.html">Tasks</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link pages_pricing" href="page-pricing.html">Pricing</a></li>
                                     <li class="sidebar-item">
                                         <a href="#pages-projects" data-bs-toggle="collapse" aria-expanded="false" class="sidebar-link @@projects_active">
                                             Projects
@@ -205,8 +201,8 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_404" href="page-404.html">404 Error</a></li>
-                                    <li class="sidebar-item"><a class="sidebar-link datatables_blank" href="page-blank.html">Blank Page</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link pages_404" href="page-404.html">404 Error</a></li>
+                                    <li class="sidebar-item"><a class="sidebar-link active" href="page-blank.html">Blank Page</a></li>
                                 </ul>
                             </li>
 
@@ -218,34 +214,34 @@
                             <li class="nav-item">
                                 <a href="app-inbox.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          all_inbox
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  all_inbox
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Inbox <span class="badge rounded-pill bg-primary small lh-1 ms-3">1
-                          new</span></span>
+                                  new</span></span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="app-chat.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          chat
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  chat
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Chat</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="app-calendar.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          calendar_month
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  calendar_month
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Calendar</span>
                                 </a>
                             </li>
@@ -256,11 +252,11 @@
                             <li class="nav-item">
                                 <a href="#layouts" data-bs-toggle="collapse" aria-expanded="false"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          space_dashboard
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  space_dashboard
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">Layouts</span>
                                 </a>
@@ -273,11 +269,11 @@
                             <li class="nav-item">
                                 <a href="#ui-components" data-bs-toggle="collapse" aria-expanded="false"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          construction
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  construction
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">UI Components</span>
                                 </a>
@@ -310,44 +306,44 @@
                             <li class="nav-item">
                                 <a href="charts.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          auto_graph
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  auto_graph
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Charts</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="maps.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          map
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  map
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Maps</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="datatables.html"
-                                   class="nav-link d-flex align-items-center text-truncate active">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          database
-                          </span>
-                      </span>
+                                   class="nav-link d-flex align-items-center text-truncate ">
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  database
+                                  </span>
+                              </span>
                                     <span class="sidebar-text">Datatables</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#component-forms" data-bs-toggle="collapse" aria-expanded="false"
                                    class="nav-link d-flex align-items-center text-truncate ">
-                      <span class="sidebar-icon">
-                        <span class="material-symbols-rounded">
-                          edit_note
-                          </span>
-                      </span>
+                              <span class="sidebar-icon">
+                                <span class="material-symbols-rounded">
+                                  edit_note
+                                  </span>
+                              </span>
                                     <!--Sidebar nav text-->
                                     <span class="sidebar-text">Forms</span>
                                 </a>
@@ -373,11 +369,11 @@
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center" href="#multi-level" data-bs-toggle="collapse" aria-expanded="false">
                                     <div class="d-flex align-items-center">
-                        <span class="sidebar-icon">
-                          <span class="material-symbols-rounded">
-                            layers
-                            </span>
-                        </span>
+                                <span class="sidebar-icon">
+                                  <span class="material-symbols-rounded">
+                                    layers
+                                    </span>
+                                </span>
                                         <span class="sidebar-text">Multi level</span>
                                     </div>
                                 </a>
@@ -437,33 +433,33 @@
                     <div class="d-flex align-items-center flex-no-wrap text-truncate">
                         <!--Sidebar-icon-->
                         <span class="sidebar-icon bg-gradient-primary rounded-3 size-40 fw-bolder text-white">
-                  A
-                </span>
+                            A
+                          </span>
                     </div>
                 </a>
                 <ul class="navbar-nav d-flex align-items-center h-100">
                     <li class="nav-item d-none d-lg-flex flex-column h-100 me-2 align-items-center justify-content-center" data-tippy-placement="bottom-start" data-tippy-content="Toggle Sidebar">
                         <a href="javascript:void(0)"
                            class="sidebar-trigger nav-link size-40 d-flex align-items-center justify-content-center p-0">
-                  <span class="material-symbols-rounded">
-                    menu_open
-                    </span>
+                            <span class="material-symbols-rounded">
+                              menu_open
+                              </span>
                         </a>
                     </li>
                     <li class="nav-item d-flex flex-column me-2 h-100 justify-content-center dropdown" data-tippy-placement="bottom-start" data-tippy-content="Search in the App">
-                        <a href="javascript;" data-bs-target="#modal_search" data-bs-toggle="modal"
+                        <a href="javascript:void;" data-bs-target="#modal_search" data-bs-toggle="modal"
                            class="d-flex align-items-center justify-content-center nav-link size-40 p-0">
-                  <span class="material-symbols-rounded">
-                    search
-                    </span>
+                            <span class="material-symbols-rounded">
+                              search
+                              </span>
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-flex flex-md-column me-2 h-100 justify-content-md-center dropdown">
                         <a href="#" data-bs-toggle="dropdown"
                            class="nav-link size-40 d-flex align-items-center justify-content-center p-0">
-                  <span class="material-symbols-rounded">
-                    apps
-                    </span>
+                            <span class="material-symbols-rounded">
+                              apps
+                              </span>
                         </a>
                         <div class="dropdown-menu overflow-hidden dropdown-menu-sm p-0 mt-0">
                             <!--Apps list-->
@@ -472,8 +468,8 @@
                                 <div class="list-group-item d-flex align-items-center justify-content-between px-3">
                                     <h6 class="dropdown-header ps-0">Apps Shortcuts</h6>
                                     <a href="#!" class="btn btn-primary">View All Apps <span class="ms-1 fs-5 align-middle material-symbols-rounded">
-                        arrow_forward
-                        </span></a>
+                                  arrow_forward
+                                  </span></a>
                                 </div>
                                 <!--App item-->
                                 <a href="#!" class="list-group-item px-4 py-3 list-group-item-action d-flex align-items-center">
@@ -519,9 +515,9 @@
                         <a href="#"
                            class="nav-link p-0 position-relative size-40 d-flex align-items-center justify-content-center"
                            aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                  <span class="material-symbols-rounded">
-                    notifications
-                    </span>
+                            <span class="material-symbols-rounded">
+                              notifications
+                              </span>
                             <span
                                 class="size-5 rounded-circle d-flex align-items-center justify-content-center position-absolute end-0 top-0 mt-2 me-1 bg-danger small"></span>
                         </a>
@@ -547,9 +543,9 @@
                                         </div>
 
                                         <div class="flex-grow-1 flex-wrap pe-3">
-                            <span class="mb-0 d-block"><strong>Adam Danely</strong> assigned
-                              a task to
-                              you <strong>#PI-392</strong></span>
+                                      <span class="mb-0 d-block"><strong>Adam Danely</strong> assigned
+                                        a task to
+                                        you <strong>#PI-392</strong></span>
                                             <small class="text-muted">Just now</small>
                                         </div>
                                     </a>
@@ -562,47 +558,47 @@
                                         </div>
 
                                         <div class="flex-grow-1 flex-wrap pe-3">
-                            <span class="mb-0 d-block"><strong>Vivianna Kiser
-                              </strong> just posted <span>"Lorem ipsum is placeholder text
-                                used in the graphic, print,
-                                and industries.
-                                "</span></span>
+                                      <span class="mb-0 d-block"><strong>Vivianna Kiser
+                                        </strong> just posted <span>"Lorem ipsum is placeholder text
+                                          used in the graphic, print,
+                                          and industries.
+                                          "</span></span>
                                             <small class="text-muted">2h Ago</small>
                                         </div>
                                     </a>
                                     <!--//Notification item start//-->
                                     <a href="#" class="list-group-item list-group-item-action py-3 px-4 d-flex align-items-center">
-                          <span class="d-block me-3">
-                            <span
-                                class="d-flex align-items-center justify-content-center lh-1 size-50 bg-tint-success text-success rounded-circle">
-                              <span class="material-symbols-rounded">
-                                construction
-                                </span>
-                            </span>
-                          </span>
+                                    <span class="d-block me-3">
+                                      <span
+                                          class="d-flex align-items-center justify-content-center lh-1 size-50 bg-tint-success text-success rounded-circle">
+                                        <span class="material-symbols-rounded">
+                                          construction
+                                          </span>
+                                      </span>
+                                    </span>
 
                                         <div class="flex-grow-1 flex-wrap pe-3">
-                            <span class="mb-0 d-block"><strong>Updated</strong> Your account
-                              password updated
-                              succuessfully</span>
+                                      <span class="mb-0 d-block"><strong>Updated</strong> Your account
+                                        password updated
+                                        succuessfully</span>
                                             <small class="text-muted">2h Ago</small>
                                         </div>
                                     </a>
                                     <!--//Notification item start//-->
                                     <a href="#" class="list-group-item list-group-item-action py-3 px-4 d-flex align-items-center">
-                          <span class="d-block me-3">
-                            <span
-                                class="d-flex align-items-center justify-content-center lh-1 size-50 bg-tint-danger text-danger rounded-circle">
-                              <span class="material-symbols-rounded">
-                                percent
-                                </span>
-                            </span>
-                          </span>
+                                    <span class="d-block me-3">
+                                      <span
+                                          class="d-flex align-items-center justify-content-center lh-1 size-50 bg-tint-danger text-danger rounded-circle">
+                                        <span class="material-symbols-rounded">
+                                          percent
+                                          </span>
+                                      </span>
+                                    </span>
 
                                         <div class="flex-grow-1 flex-wrap pe-3">
-                            <span class="mb-0 d-block"><strong>Pro discount</strong> Upgrade
-                              to pro plan with 30%
-                              discount, Apply coupon <span class="badge bg-primary">PRO30</span></span>
+                                      <span class="mb-0 d-block"><strong>Pro discount</strong> Upgrade
+                                        to pro plan with 30%
+                                        discount, Apply coupon <span class="badge bg-primary">PRO30</span></span>
                                             <small class="text-muted">2h Ago</small>
                                         </div>
                                     </a>
@@ -647,28 +643,28 @@
                             </div>
                             <div class="pt-2">
                                 <a href="profile.html" class="dropdown-item d-flex align-items-center">
-                      <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-primary text-white rounded-2">
-                      account_circle
-                      </span>
+                                <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-primary text-white rounded-2">
+                                account_circle
+                                </span>
                                     <span class="flex-grow-1">Profile</span>
                                 </a>
                                 <a href="account-general.html" class="dropdown-item d-flex align-items-center">
-                      <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-danger text-white rounded-2">
-                      settings
-                      </span>
+                                <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-danger text-white rounded-2">
+                                settings
+                                </span>
                                     <span class="flex-grow-1">Settings</span>
                                 </a>
                                 <a href="page-tasks.html" class="dropdown-item d-flex align-items-center">
-                      <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-info text-white rounded-2">
-                      task
-                      </span>
+                                <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-info text-white rounded-2">
+                                task
+                                </span>
                                     <span class="flex-grow-1">Tasks</span>
                                 </a>
                                 <hr class="my-2">
                                 <a href="page-auth-signin.html" class="dropdown-item d-flex align-items-center">
-                      <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-warning text-white rounded-2">
-                      logout
-                      </span>
+                                <span class="material-symbols-rounded align-middle me-2 size-30 fs-5 d-flex align-items-center justify-content-center bg-warning text-white rounded-2">
+                                logout
+                                </span>
                                     <span class="flex-grow-1">Logout</span>
                                 </a>
                             </div>
@@ -700,9 +696,9 @@
                                 <form>
                                     <div class="position-relative mb-4">
                                         <div class="text-muted">
-                  <span class="material-symbols-rounded position-absolute start-0 top-50 translate-middle-y ms-2">
-                    search
-                    </span>
+                            <span class="material-symbols-rounded position-absolute start-0 top-50 translate-middle-y ms-2">
+                              search
+                              </span>
                                         </div>
                                         <input type="text" autofocus class="form-control form-control-lg border-2 border-primary border ps-6"
                                                placeholder="Search App...">
@@ -712,9 +708,9 @@
                                 <!--Recently searched-->
                                 <div class="d-flex mb-2 align-items-center">
                                     <h6 class="d-block mb-0 me-3 flex-grow-1">
-                <span class="material-symbols-rounded align-middle me-1 fs-5 opacity-50">
-                  history
-                  </span>
+                          <span class="material-symbols-rounded align-middle me-1 fs-5 opacity-50">
+                            history
+                            </span>
                                         Recent
                                     </h6>
                                     <a href="#!" class="small flex-shrink-0 d-block">Clear All</a>
@@ -736,34 +732,30 @@
                             </div>
                         </div>
                         <div class="pt-0 border-top-0 modal-footer">
-                 <span class="small">Press ESC or
-                 <span class="badge bg-secondary" role="button" data-bs-dismiss="modal">Click me</span> to close
-                 </span>
+                           <span class="small">Press ESC or
+                           <span class="badge bg-secondary" role="button" data-bs-dismiss="modal">Click me</span> to close
+                           </span>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+
             <!--//Page Toolbar//-->
-            <div class="toolbar px-3 px-lg-6 py-3">
+            <div class="toolbar pb-4 px-3 px-lg-6 pt-4 bg-body">
                 <div class="position-relative container-fluid px-0">
                     <div class="row align-items-center position-relative">
-                        <div class="col-md-8 mb-4 mb-md-0">
-                            <h3 class="mb-2">Datatables</h3>
+                        <div class="col-md-8 mb-4 mb-lg-0">
+                            <h3 class="mb-2">Blank page</h3>
 
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active">Datatables</li>
+                                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                                    <li class="breadcrumb-item active">Pages</li>
+                                    <li class="breadcrumb-item active">Blank</li>
                                 </ol>
                             </nav>
-                        </div>
-                        <div class="col-md-4 text-md-end">
-                            <a href="https://datatables.net/" target="_blank" class="text-body">More Examples
-                                <span class="material-symbols-rounded align-middle ms-1 fs-5">
-                        open_in_new
-                        </span>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -771,17 +763,21 @@
             <!--//Page Toolbar End//-->
 
             <!--//Page content//-->
-            @yield('content')
+            <div class="content pt-3 px-3 px-lg-6 d-flex flex-column-fluid">
+                <div class="container-fluid px-0">
+                    @yield('content')
+                </div>
+            </div>
             <!--//Page content End//-->
 
             <!--//Page-footer//-->
             <footer class="pb-3 pb-lg-5 px-3 px-lg-6">
                 <div class="container-fluid px-0">
-                <span class="d-block lh-sm small text-muted text-end">&copy;
-                  <script>
-                    document.write(new Date().getFullYear())
-                  </script>. Copyright
-                </span>
+                        <span class="d-block lh-sm small text-muted text-end">&copy;
+                          <script>
+                            document.write(new Date().getFullYear())
+                          </script>. Copyright
+                        </span>
                 </div>
             </footer>
             <!--/.Page Footer End-->
@@ -796,18 +792,6 @@
 <!--////////////Theme Core scripts End/////////////////-->
 
 
-<!--Datatables-->
-<script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.0/js/dataTables.bootstrap5.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Datatables Responsive
-        $("#datatable").DataTable({
-            "filter":false,
-            "length":false
-        });
-    });
-</script>
 </body>
 
 </html>

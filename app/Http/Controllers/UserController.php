@@ -12,18 +12,19 @@ class UserController extends Controller
     {
         $users = User::all();
         $data = ["users" => $users];
-        return view('users.index')->with($data);
+        return view('dashboard.users.index')->with($data);
     }
-    public function show ($id)
+
+    public function show($id)
     {
         $user = User::FindOrFail($id);
         $data = ['user' => $user];
-        return view('users.show')->with($data);
+        return view('dashboard.users.show')->with($data);
     }
 
     public function create()
     {
-        return view('users.create');
+        return view('dashboard.users.create');
     }
 
     public function store(Request $request)
@@ -31,8 +32,8 @@ class UserController extends Controller
         $data = $request->all();
 
         $validator = Validator::make($data, [
-            'name'   => 'required|max:20',
-            'email'  => 'email|unique:users,email',
+            'name' => 'required|max:20',
+            'email' => 'email|unique:users,email',
         ]);
 
         if ($validator->fails()) {
@@ -53,8 +54,8 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::FindOrFail($id);
-        $data = ['user'=>$user];
-        return view('users.edit')->with('data');
+        $data = ['user' => $user];
+        return view('dashboard.users.edit')->with($data);
     }
 
     public function update(Request $request, $id)

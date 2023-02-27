@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="col-12">
-                <form method="post" action="{{ route('users.update') }}">
+                <form method="post" action="{{ route('users.update', $user->id) }}">
                     @csrf
                     @method('PUT')
                                 <div class="form-group mt-2">

@@ -1,36 +1,84 @@
 @extends('layouts.dashboard')
 @section('content')
-     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <a href="{{ route('users.create') }}" class="btn btn-success "> Create User</a>
+    <div class="col-12">
+        <!--Begin::table card-->
+        <div class="card table-card table-nowrap mb-3 mb-lg-5">
+            <div class="card-header">
+                <h5 class="mb-0">Table components</h5>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <table class="table mt-xl-4">
+
+
+            <div class="table-responsive table-card table-nowrap">
+                <table class="table align-middle table-hover mb-0">
                     <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Created At</th>
-                        <th>Action</th>
+                        <th>Id</th>
+                        <th>User</th>
+                        <th>Status</th>
+                        <th>
+                            Working Hours
+                        </th>
+                        <th class="text-end">Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($users as $user)
                         <tr>
-                            <td><a href="{{route('users.show', $user->id)}}">{{ $user->id }}</a></td>
-                            <td>{{ $user->name }}</td>
-                            <td>{{ $user->email }}</td>
-                            <td>{{ $user->created_at->diffForHumans() }}</td>
-                            <td><a href="{{route('edit.blade'}}" class="btn btn-warning">Edit</a></td>
+                            <td>{{ $user->id }}</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-0">{{ $user->name }}</h6>
+                                        <small class="text-muted">{{ $user->email }}</small>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge bg-success fs-6">Administrator</span>
+                            </td>
+                            <td>
+                                <div class="width-120">
+                                    <div class="progress height-5 rounded-pill">
+                                        <div
+                                            class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded-pill"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="54"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 54%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <a href="{{ route('users.show', $user->id) }}" data-tippy-content="View user">
+                                        <span
+                                            class="material-symbols-rounded align-middle fs-5 text-body">visibility</span>
+                                    </a>
+                                    <!--Divider line-->
+                                    <span class="border-start mx-2 d-block height-20"></span>
+                                    <a href="{{ route('users.edit', $user->id) }}" data-tippy-content="Edit user">
+                                        <span class="material-symbols-rounded align-middle fs-5 text-body">edit</span>
+                                    </a>
+                                    <!--Divider line-->
+                                    <span class="border-start mx-2 d-block height-20"></span>
+                                    <form method="post" action="{{ route('users.destroy', $user->id) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button data-tippy-content="Delete user">
+                                            <span
+                                                class="material-symbols-rounded align-middle fs-5 text-body">delete</span>
+                                        </button>
+                                    </form>
+
+
+                                </div>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
+        <!--/ends::table card-->
+
+
     </div>
 @endsection
