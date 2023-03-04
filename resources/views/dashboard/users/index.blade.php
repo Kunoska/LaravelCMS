@@ -1,8 +1,15 @@
 @extends('layouts.dashboard')
 @section('content')
     <div class="col-12">
+
+        <a href="/dashboard/users/create" class="btn btn-primary"> CREATE USER </a>
+
+
+
         <!--Begin::table card-->
         <div class="card table-card table-nowrap mb-3 mb-lg-5">
+
+
             <div class="card-header">
                 <h5 class="mb-0">Table components</h5>
             </div>
@@ -48,24 +55,21 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-end align-items-center">
-                                    <a href="{{ route('users.show', $user->id) }}" data-tippy-content="View user">
-                                        <span
-                                            class="material-symbols-rounded align-middle fs-5 text-body">visibility</span>
-                                    </a>
+                                    <a href="{{ route('users.show', $user->id) }}" class="btn btn-primary"> View </a>
+                                        @csrf
+                                        @method('GET')
+
                                     <!--Divider line-->
                                     <span class="border-start mx-2 d-block height-20"></span>
-                                    <a href="{{ route('users.edit', $user->id) }}" data-tippy-content="Edit user">
-                                        <span class="material-symbols-rounded align-middle fs-5 text-body">edit</span>
-                                    </a>
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning"> Edit </a>
+                                        @csrf
+                                        @method('GET')
                                     <!--Divider line-->
                                     <span class="border-start mx-2 d-block height-20"></span>
                                     <form method="post" action="{{ route('users.destroy', $user->id) }}">
                                         @csrf
                                         @method('DELETE')
-                                        <button data-tippy-content="Delete user">
-                                            <span
-                                                class="material-symbols-rounded align-middle fs-5 text-body">delete</span>
-                                        </button>
+                                        <button class="btn btn-danger"> DELETE </button>
                                     </form>
 
 

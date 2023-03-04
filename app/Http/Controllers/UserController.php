@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
 class UserController extends Controller
 {
     public function index()
@@ -37,15 +36,15 @@ class UserController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('products/create')
+            return redirect('users/create')
                 ->withErrors($validator)
                 ->withInput();
         }
 
         User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => $data['password']
+            'name'      => $data['name'],
+            'email'     => $data['email'],
+            'password'  => $data['password']
         ]);
 
         return redirect(route('users.index'));

@@ -26,6 +26,7 @@
 </head>
 
 <body>
+@yield('content')
 <!--////////////////// PreLoader Start//////////////////////-->
 <div class="loader bg-gradient-primary text-white">
     <div
@@ -447,7 +448,7 @@
                         </a>
                     </li>
                     <li class="nav-item d-flex flex-column me-2 h-100 justify-content-center dropdown" data-tippy-placement="bottom-start" data-tippy-content="Search in the App">
-                        <a href="javascript:void;" data-bs-target="#modal_search" data-bs-toggle="modal"
+                        <a href="javascript;" data-bs-target="#modal_search" data-bs-toggle="modal"
                            class="d-flex align-items-center justify-content-center nav-link size-40 p-0">
                             <span class="material-symbols-rounded">
                               search

@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 @section('content')
-    <div class="container">
+    <div class="container" xmlns="http://www.w3.org/1999/html">
         <div class="row">
             <div class="col-12">
                 <div class="col-12">
@@ -8,15 +8,24 @@
                         <div class="col-8">
                             <form method="post" action="{{ route('users.store') }}">
                                 @csrf
-                                <div class="form-roup mt-2">
+                                @method('POST')
+
+                                <div class="form-group mt-2">
                                     <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" aria-describedby="YourName"
-                                           name="name">
+                                    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" value="{{ old('name') }}">
+                                    @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
                                 </div>
                                 <div class="form-group mt-2">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                           name="email">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" value="{{ old('email') }}">
+                                    @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
                                 </div>
 {{--                                <div class="form-group mt-2">--}}
 {{--                                    <label for="role">Roles</label>--}}
@@ -36,7 +45,11 @@
 {{--                                </div>--}}
                                 <div class="form-group mt-2">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password">
+                                    <input type="password" class="form-control @error('password') is-invalid @enderror" id="password" name="password" >
+                                    @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                    </span>
                                 </div>
                                 <button type="submit" class="btn btn-primary mt-xl-4">
                                     Submit
@@ -49,5 +62,4 @@
             </div>
         </div>
     </div>
-
-@endsection
+    @endsection
