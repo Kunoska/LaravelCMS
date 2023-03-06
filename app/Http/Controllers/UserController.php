@@ -32,11 +32,11 @@ class UserController extends Controller
 
         $validator = Validator::make($data, [
             'name' => 'required|max:20',
-            'email' => 'email|unique:users,email',
+            'email' => 'required|unique:users',
         ]);
 
         if ($validator->fails()) {
-            return redirect('users/create')
+            return redirect()->to(route('users.create'))
                 ->withErrors($validator)
                 ->withInput();
         }

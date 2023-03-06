@@ -26,7 +26,6 @@
 </head>
 
 <body>
-@yield('content')
 <!--////////////////// PreLoader Start//////////////////////-->
 <div class="loader bg-gradient-primary text-white">
     <div
@@ -743,25 +742,7 @@
 
 
 
-            <!--//Page Toolbar//-->
-            <div class="toolbar pb-4 px-3 px-lg-6 pt-4 bg-body">
-                <div class="position-relative container-fluid px-0">
-                    <div class="row align-items-center position-relative">
-                        <div class="col-md-8 mb-4 mb-lg-0">
-                            <h3 class="mb-2">Blank page</h3>
 
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
-                                    <li class="breadcrumb-item active">Pages</li>
-                                    <li class="breadcrumb-item active">Blank</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//Page Toolbar End//-->
 
             <!--//Page content//-->
             <div class="content pt-3 px-3 px-lg-6 d-flex flex-column-fluid">

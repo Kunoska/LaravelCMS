@@ -2,7 +2,7 @@
 @section('content')
     <div class="col-12">
 
-        <a href="/dashboard/users/create" class="btn btn-primary"> CREATE USER </a>
+
 
 
 
@@ -11,7 +11,7 @@
 
 
             <div class="card-header">
-                <h5 class="mb-0">Table components</h5>
+                <h5 class="mb-0">  <a href="/dashboard/users/create" class="btn btn-primary"> CREATE USER </a></h5>
             </div>
 
 
