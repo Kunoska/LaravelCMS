@@ -11,7 +11,7 @@
 
 
             <div class="card-header">
-                <h5 class="mb-0">  <a href="/dashboard/users/create" class="btn btn-primary bi bi-plus-circle"> ДОДАТИ КОРИСНИК </a></h5>
+                <h5 class="mb-0">  <a href="/dashboard/users/create" class="btn btn-primary bi bi-plus-circle"> ДОДАДИ КОРИСНИК </a></h5>
             </div>
 
 
