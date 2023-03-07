@@ -11,7 +11,7 @@
 
 
             <div class="card-header">
-                <h5 class="mb-0">  <a href="/dashboard/users/create" class="btn btn-primary"> CREATE USER </a></h5>
+                <h5 class="mb-0">  <a href="/dashboard/users/create" class="btn btn-primary bi bi-plus-circle"> ДОДАТИ КОРИСНИК </a></h5>
             </div>
 
 
@@ -20,12 +20,12 @@
                     <thead>
                     <tr>
                         <th>Id</th>
-                        <th>User</th>
-                        <th>Status</th>
+                        <th>Корисник</th>
+                        <th>Улога</th>
                         <th>
-                            Working Hours
+                            Работни часови
                         </th>
-                        <th class="text-end">Action</th>
+                        <th class="text-end">Акција</th>
                     </tr>
                     </thead>
                     <tbody>
