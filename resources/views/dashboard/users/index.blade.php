@@ -41,7 +41,7 @@
                                 </div>
                             </td>
                             <td>
-                                <span class="badge bg-success fs-6">Administrator</span>
+                                <span class="badge bg-success fs-6">{{ $user->role->name }}</span>
                             </td>
                             <td>
                                 <div class="width-120">

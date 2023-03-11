@@ -4,7 +4,7 @@
     <div class="row card">
         <div class="card-header">Create User</div>
         <div class="card-body">
-            <div class="col-12">
+            <div class="col-6">
                 <form method="post" action="{{ route('users.store') }}">
                     @csrf
                     @method('POST')
@@ -38,6 +38,14 @@
                                           <strong>{{ $message }}</strong>
                                     </span>
                         @enderror
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="role">Role</label>
+                        <select name="role_id" class="form-control" id="role">
+                            @foreach($roles as $role)
+                                <option value="{{ $role->id }}">{{ $role->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary mt-xl-4">
                         Submit

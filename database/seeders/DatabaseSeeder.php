@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\User;
 use Illuminate\Database\Seeder;
 use  Lwwcas\LaravelCountries\Models\Country;
 
@@ -21,16 +19,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(\Lwwcas\LaravelCountries\Database\Seeders\LcDatabaseSeeder::class);
-
-
+        $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
-
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
