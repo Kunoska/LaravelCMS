@@ -54,7 +54,7 @@
                         <div class="d-flex align-items-center flex-no-wrap text-truncate">
                             <!--Sidebar-icon-->
                             <span class="sidebar-icon size-40 d-flex align-items-center justify-content-center fs-4 lh-1 text-white rounded-3 bg-gradient-primary fw-bolder"> A </span>
-                            <span class="sidebar-text">
+                            <span class="sidebar-text text-blue">
                             <!--Sidebar-text-->
                             <span class="sidebar-text text-truncate fs-3 fw-bold">
                               Admin panel
@@ -73,22 +73,22 @@
                                 <span>Главни уредувања</span>
                             </li>
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link d-flex align-items-center text-truncate ">
+                                <a href="{{ route('settings.index') }}" class="nav-link d-flex align-items-center text-truncate">
                               <span class="sidebar-icon">
-                                   <i class="bi bi-gear-wide-connected"></i>
+                                   <i class="bi bi-gear-wide-connected text-blue"></i>
                               </span>
                                     <!--Sidebar nav text-->
 
-                                    <span class="sidebar-text">Подесувања</span>
+                                    <span class="sidebar-text text-blue">Подесувања</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="index-analytics.html" class="nav-link d-flex align-items-center text-truncate ">
+                                <a href="{{ route('users.index') }}" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                <i class="bi bi-person-fill"></i>
+                                <i class="bi bi-person-fill text-blue"></i>
                               </span>
                                     <!--Sidebar nav text-->
-                                    <span class="sidebar-text">Корисници</span>
+                                    <span class="sidebar-text text-blue">Корисници</span>
                                 </a>
                             </li>
 
@@ -104,40 +104,40 @@
                             <li class="nav-item">
                                 <a href="app-inbox.html" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                  <i class="bi bi-images" ></i>
+                                  <i class="bi bi-images text-blue"></i>
                               </span>
 
-                                    <span class="sidebar-text">Слајдер </span>
+                                    <span class="sidebar-text text-blue">Слајдер </span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                   <i class="bi bi-list-check"></i>
+                                   <i class="bi bi-list-check text-blue"></i>
                               </span>
                                     <!--Sidebar nav text-->
 
-                                    <span class="sidebar-text">Категории</span>
+                                    <span class="sidebar-text text-blue">Категории</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a href="app-chat.html" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                <i class="bi bi-patch-plus-fill"></i>
+                                <i class="bi bi-patch-plus-fill text-blue"></i>
                               </span>
 
-                                    <span class="sidebar-text">Продукти</span>
+                                    <span class="sidebar-text text-blue">Продукти</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a href="app-calendar.html" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                <i class="bi bi-patch-plus"></i>
+                                <i class="bi bi-patch-plus text-blue"></i>
                               </span>
-                                    <span class="sidebar-text">Статички страни</span>
+                                    <span class="sidebar-text text-blue">Статички страни</span>
                                 </a>
                             </li>
 
@@ -148,10 +148,10 @@
                             <li class="nav-item">
                                 <a href="#layouts" data-bs-toggle="collapse" aria-expanded="false" class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                 <i class="bi bi-postcard-heart"></i>
+                                 <i class="bi bi-postcard-heart text-blue"></i>
                               </span>
                                     <!--Sidebar nav text-->
-                                    <span class="sidebar-text">Услуги</span>
+                                    <span class="sidebar-text text-blue">Услуги</span>
                                 </a>
                                 <ul id="layouts" class="sidebar-dropdown list-unstyled collapse @@layout_collapse_show">
                                     <li class="sidebar-item"><a class="sidebar-link @@layout_compact" href="layout-compact.html">Compact</a></li>
@@ -163,10 +163,10 @@
                                 <a href="#ui-components" data-bs-toggle="collapse" aria-expanded="false"
                                    class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                <i class="bi bi-shield-fill-check"></i>
+                                <i class="bi bi-shield-fill-check text-blue"></i>
                               </span>
                                     <!--Sidebar nav text-->
-                                    <span class="sidebar-text">Референти</span>
+                                    <span class="sidebar-text text-blue">Референти</span>
                                 </a>
 
                                 <ul id="ui-components" class="sidebar-dropdown list-unstyled collapse @@components_collapse">
@@ -199,9 +199,9 @@
                                 <a href="charts.html"
                                    class="nav-link d-flex align-items-center text-truncate ">
                               <span class="sidebar-icon">
-                                <i class="bi bi-code-slash"></i>
+                                <i class="bi bi-code-slash text-blue"></i>
                               </span>
-                                    <span class="sidebar-text">Скрипти</span>
+                                    <span class="sidebar-text text-blue">Скрипти</span>
                                 </a>
                             </li>
 
@@ -346,7 +346,7 @@
                                 </svg>
                                 <div class="position-relative">
                                     <h5 class="mb-1">{{ auth()->user()->name }}</h5>
-                                    <p class="text-white text-opacity-75 small mb-0 lh-1">Full stack developer</p>
+                                    <p class="text-white text-opacity-75 small mb-0 lh-1">{{ auth()->user()->role->name }}</p>
                                 </div>
                             </div>
                             <div class="pt-2">
@@ -480,3 +480,9 @@
 </body>
 
 </html>
+
+<style>
+    .text-blue {
+        color: blue;
+    }
+</style>
